@@ -14,11 +14,11 @@ CACHE_FILES = {
   'Beta': ('C:/Program Files (x86)/World of Warcraft/_beta_/Cache/ADB/enUS/DBCache.bin', 'https://cdn.discordapp.com/attachments/524387813060247553/963077070114656306/unknown.png'),
 }
 
-# Each line of this file should be a discord webhook link to post changes to. These should look something like
+# Each line of this file should be a discord webhook link to post changes to.
 WEBHOOK_FILE = os.path.join(os.path.split(__file__)[0], 'webhooks')
 
 # Each line of this file is the name of a table to hash with SStrHash.
-# If this file is ommi
+# If this file is ommitted or a table name is missing, the table will show up as unk_<table_hash>.
 DB_NAMES_FILE = os.path.join(os.path.split(__file__)[0], 'db_files')
 
 # From https://wowdev.wiki/SStrHash
