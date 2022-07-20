@@ -236,7 +236,7 @@ class DBCache:
 
   def unpack_entry(self):
     # This exception for version 8 applies to all 9.1.0 builds, but it is not possible to detect the full version from just the hotfix file.
-    if self.version == 7 or self.version == 8 and self.build in [39291]:
+    if self.version == 7 or self.version == 8 and self.build in [39291, 40725]:
       magic, index, table_hash, record_id, data_size, status, *_ = self.unpack('<4siIIIB3x')
     elif self.version >= 8:
       magic, index, _, table_hash, record_id, data_size, status, *_ = self.unpack('<4siIIIIB3x')
