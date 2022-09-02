@@ -164,6 +164,7 @@ ChrCustomizationOption
 ChrCustomizationReq
 ChrCustomizationReqChoice
 ChrCustomizationSkinnedModel
+ChrCustomizationVoice
 ChrModel
 ChrModelMaterial
 ChrModelTextureLayer
@@ -196,6 +197,7 @@ ComponentTextureFileData
 ConditionalContentTuning
 ConfigurationWarning
 ConsoleScripts
+ContentRestrictionRule
 ContentRestrictionRuleSet
 ContentTuning
 ContentTuningDescription
@@ -209,6 +211,7 @@ ConversationLine
 CorruptionEffects
 Covenant
 CraftingData
+CraftingDataEnchantQuality
 CraftingDataItemQuality
 CraftingDifficulty
 CraftingDifficultyQuality
@@ -218,6 +221,7 @@ CraftingReagentEffect
 CraftingReagentQuality
 Creature
 CreatureDifficulty
+CreatureDifficultyTreasure
 CreatureDisplayInfo
 CreatureDisplayInfoCond
 CreatureDisplayInfoCondXChoice
@@ -282,6 +286,8 @@ FactionTemplate
 FileData
 FileDataComplete
 FilePaths
+FlightCapability
+FlightCapabilityXGlideEvent
 FootprintTextures
 FootstepTerrainLookup
 FriendshipRepReaction
@@ -358,6 +364,8 @@ GarrType
 GarrUiAnimClassInfo
 GarrUiAnimRaceInfo
 GemProperties
+GlideEvent
+GlideEventBlendTimes
 GlobalColor
 GlobalCurve
 GlobalGameContentTuning
@@ -376,6 +384,8 @@ GMSurveyCurrentSurvey
 GMSurveyQuestions
 GMSurveySurveys
 GMTicketCategory
+GossipNPCOption
+GossipNPCOptionDisplayInfo
 GossipXGarrTalentTrees
 GossipXUIDisplayInfo
 GradientEffect
@@ -433,8 +443,8 @@ ImportPriceQuality
 ImportPriceShield
 ImportPriceWeapon
 InvasionClientData
-Item-sparse
 Item
+Item-sparse
 ItemAppearance
 ItemAppearanceXUiCamera
 ItemArmorQuality
@@ -481,6 +491,8 @@ ItemLevelSelectorQuality
 ItemLevelSelectorQualitySet
 ItemLimitCategory
 ItemLimitCategoryCondition
+ItemLogicalCost
+ItemLogicalCostGroup
 ItemModifiedAppearance
 ItemModifiedAppearanceExtra
 ItemNameDescription
@@ -569,6 +581,7 @@ MapChallengeMode
 MapDifficulty
 MapDifficultyXCondition
 MapLoadingScreen
+MapRenderScale
 MarketingPromotionsXLocale
 Material
 MawPower
@@ -855,6 +868,7 @@ SpellRadius
 SpellRange
 SpellReagents
 SpellReagentsCurrency
+SpellReplacement
 SpellRuneCost
 SpellScaling
 SpellScript
@@ -884,8 +898,8 @@ SpellXDescriptionVariables
 SpellXSpellVisual
 SSAOSettings
 StableSlotPrices
-StartupFiles
 Startup_Strings
+StartupFiles
 Stationery
 StringLookups
 SummonProperties
@@ -930,7 +944,10 @@ TraitNodeGroupXTraitNode
 TraitNodeXTraitCond
 TraitNodeXTraitCost
 TraitNodeXTraitNodeEntry
+TraitSystem
 TraitTree
+TraitTreeLoadout
+TraitTreeLoadoutEntry
 TraitTreeXTraitCost
 TraitTreeXTraitCurrency
 TransformMatrix
@@ -1035,6 +1052,7 @@ WeeklyRewardChestThreshold
 WindSettings
 WMOAreaTable
 WMOMinimapTexture
+World_PVP_Area
 WorldBossLockout
 WorldChunkSounds
 WorldEffect
@@ -1049,7 +1067,6 @@ WorldState
 WorldStateExpression
 WorldStateUI
 WorldStateZoneSounds
-World_PVP_Area
 WowError_Strings
 ZoneIntroMusicTable
 ZoneLight
