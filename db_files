@@ -164,6 +164,7 @@ ChrCustomizationOption
 ChrCustomizationReq
 ChrCustomizationReqChoice
 ChrCustomizationSkinnedModel
+ChrCustomizationVisReq
 ChrCustomizationVoice
 ChrModel
 ChrModelMaterial
@@ -216,6 +217,7 @@ CraftingDataItemQuality
 CraftingDifficulty
 CraftingDifficultyQuality
 CraftingOrder
+CraftingOrderHouse
 CraftingQuality
 CraftingReagentEffect
 CraftingReagentQuality
@@ -233,6 +235,7 @@ CreatureDisplayInfoTrn
 CreatureDispXUiCamera
 CreatureFamily
 CreatureImmunities
+CreatureLabel
 CreatureModelData
 CreatureMovementInfo
 CreatureSoundData
@@ -299,6 +302,7 @@ GameObjectArtKit
 GameObjectDiffAnimMap
 GameObjectDisplayInfo
 GameObjectDisplayInfoXSoundKit
+GameObjectLabel
 GameObjects
 GameObjectsClient
 GameParameter
@@ -551,6 +555,7 @@ LightIntBand
 Lightning
 LightParams
 LightSkybox
+LightWorldShadow
 LiquidMaterial
 LiquidObject
 LiquidType
@@ -671,6 +676,7 @@ ProfessionRating
 ProfessionTrait
 ProfessionTraitXEffect
 ProfessionTraitXLabel
+ProfessionXRating
 ProfTraitPathNode
 ProfTraitPerkNode
 ProfTraitTree
@@ -678,6 +684,7 @@ PVPBracketTypes
 PvpBrawl
 PVPDifficulty
 PVPItem
+PvpRating
 PvpReward
 PvpScalingEffect
 PvpScalingEffectType
@@ -793,10 +800,12 @@ SoundKitChild
 SoundKitEntry
 SoundKitFallback
 SoundKitName
+SoundMixGroup
 SoundOverride
 SoundParameter
 SoundProviderPreferences
 SoundSamplePreferences
+SoundWaterfallEmitter
 SoundWaterType
 SourceInfo
 SpamMessages
@@ -839,6 +848,7 @@ SpellEffectGroupSize
 SpellEffectNames
 SpellEffectScaling
 SpellEmpower
+SpellEmpowerStage
 SpellEquippedItems
 SpellFlyout
 SpellFlyoutItem
@@ -978,6 +988,7 @@ UIDungeonScoreRarity
 UIEventToast
 UIExpansionDisplayInfo
 UIExpansionDisplayInfoIcon
+UIGenericWidgetDisplay
 UiItemInteraction
 UiMap
 UiMapArt
@@ -1005,6 +1016,7 @@ UiTextureAtlasElement
 UiTextureAtlasElementOverride
 UiTextureAtlasMember
 UiTextureKit
+UiWeeklyReward
 UiWidget
 UiWidgetConstantSource
 UiWidgetDataSource
@@ -1063,6 +1075,7 @@ WorldMapOverlay
 WorldMapOverlayTile
 WorldMapTransforms
 WorldSafeLocs
+WorldShadow
 WorldState
 WorldStateExpression
 WorldStateUI
