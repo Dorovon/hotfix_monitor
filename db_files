@@ -584,6 +584,7 @@ Map
 MapCelestialBody
 MapChallengeMode
 MapDifficulty
+MapDifficultyRedirect
 MapDifficultyXCondition
 MapLoadingScreen
 MapRenderScale
@@ -655,6 +656,16 @@ PathEdge
 PathNode
 PathNodeProperty
 PathProperty
+PerksActivity
+PerksActivityTag
+PerksActivityThreshold
+PerksActivityThresholdGroup
+PerksActivityXInterval
+PerksActivityXTag
+PerksVendorCategory
+PerksVendorItem
+PerksVendorItemUIInfo
+PerksVendorItemXInterval
 PetitionType
 PetLoyalty
 PetPersonality
