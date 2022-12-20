@@ -129,7 +129,7 @@ class DBCache:
     self.save_entries()
 
   def supported_version(self):
-    if self.magic != b'XFTH' or not self.version in [7, 8]:
+    if self.magic != b'XFTH' or not self.version in [7, 8, 9]:
       return False
     return True
 
@@ -238,8 +238,10 @@ class DBCache:
     # This exception for version 8 applies to all 9.1.0 builds, but it is not possible to detect the full version from just the hotfix file.
     if self.version == 7 or self.version == 8 and self.build in [39291, 40725]:
       magic, index, table_hash, record_id, data_size, status, *_ = self.unpack('<4siIIIB3x')
-    elif self.version >= 8:
+    elif self.version == 8:
       magic, index, _, table_hash, record_id, data_size, status, *_ = self.unpack('<4siIIIIB3x')
+    elif self.version >= 9:
+      magic, region, index, _, table_hash, record_id, data_size, status, *_ = self.unpack('<4siiIIIIB3x')
     data = self.unpack_bytes(data_size)
     table_name = table_hashes[table_hash] if table_hash in table_hashes else 'unk_' + str(table_hash)
     entry = (index, table_name, record_id, status, data)
