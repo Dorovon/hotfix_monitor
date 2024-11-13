@@ -9,9 +9,15 @@ from time import sleep
 
 # the DBCache.bin files to monitor and images to use for them in the webhook
 CACHE_FILES = {
-  'Live': ('C:/Program Files (x86)/World of Warcraft/_retail_/Cache/ADB/enUS/DBCache.bin', 'https://cdn.discordapp.com/attachments/524387813060247553/963077048811786251/unknown.png'),
-  'PTR': ('C:/Program Files (x86)/World of Warcraft/_ptr_/Cache/ADB/enUS/DBCache.bin', 'https://cdn.discordapp.com/attachments/524387813060247553/963077070114656306/unknown.png'),
-  'Beta': ('C:/Program Files (x86)/World of Warcraft/_beta_/Cache/ADB/enUS/DBCache.bin', 'https://cdn.discordapp.com/attachments/524387813060247553/963077070114656306/unknown.png'),
+  'Live': 'C:/Program Files (x86)/World of Warcraft/_retail_/Cache/ADB/enUS/DBCache.bin',
+  'PTR': 'C:/Program Files (x86)/World of Warcraft/_ptr_/Cache/ADB/enUS/DBCache.bin',
+  'PTR2': 'C:/Program Files (x86)/World of Warcraft/_ptr2_/Cache/ADB/enUS/DBCache.bin',
+  'Classic Era PTR': 'C:/Program Files (x86)/World of Warcraft/_classic_era_ptr_/Cache/ADB/enUS/DBCache.bin',
+  'Beta': 'C:/Program Files (x86)/World of Warcraft/_beta_/Cache/ADB/enUS/DBCache.bin',
+  'XPTR': 'C:/Program Files (x86)/World of Warcraft/_xptr_/Cache/ADB/enUS/DBCache.bin',
+  'Classic': 'C:/Program Files (x86)/World of Warcraft/_classic_/Cache/ADB/enUS/DBCache.bin',
+  'Classic Era': 'C:/Program Files (x86)/World of Warcraft/_classic_era_/Cache/ADB/enUS/DBCache.bin',
+  'Classic Beta': 'C:/Program Files (x86)/World of Warcraft/_classic_beta_/Cache/ADB/enUS/DBCache.bin',
 }
 
 # Each line of this file should be a discord webhook link to post changes to.
@@ -316,7 +322,7 @@ if __name__ == '__main__':
   # but polling just a few files works well enough and helps to minimize required dependencies.
   while True:
     for name in CACHE_FILES:
-      path, icon = CACHE_FILES[name]
+      path = CACHE_FILES[name]
       if not os.path.exists(path):
         continue
 
@@ -325,6 +331,6 @@ if __name__ == '__main__':
         continue
 
       times[name] = t
-      process_cache(name, path, icon)
+      process_cache(name, path)
 
     sleep(1)
